@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>Notificaciones</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div
+        class="jumbotron text-center mdb-color lighten-2 white-text z-depth-2"
+      >
+        <!--Title-->
+        <h1 class="card-title h2-responsive mt-2 font-bold">
+          <strong>Notificaciones</strong>
+        </h1>
+        <!--Subtitle-->
+        <p class="mt-4">
+          <strong>Servicio Integral de Notificaciones</strong>
+        </p>
+
+        <!--Text-->
+        <div class="d-flex justify-content-center">
+          <p class="card-text my-2" style="max-width: 43rem">
+            Servicio dedicado al manejo de notificaciones de los diferentes
+            sistemas integrales de la empresa. La versión inicial
+            cuenta con la adminsitración de afiliados, administradores,
+            notificaciones push y configuraciones. En versiones futuras se
+            espera que se implementen sistemas tales como: In App Messages,
+            Mails, SMS, etc.
+          </p>
+        </div>
+
+        <hr class="my-4 rgba-white-light" />
+
+        <button type="button" class="btn btn-outline-white" id="docu">
+          API Documentation
+        </button>
+      </div>
+    </div>
+    <script>
+      document.getElementById('docu').addEventListener('click', function () {
+        window.open(window.location.origin + '/api-docs/', '_self');
+      });
+    </script>
+  </body>
+</html>
